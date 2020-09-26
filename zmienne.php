@@ -6,6 +6,21 @@
     <title>Zmienne PHP</title>
 </head>
 <body>
-    Pierwszy plik
+    Pierwszy plik<br>
+    <?php
+        $name="Anna";
+        echo "WSB<br>";
+        echo "WSB: $name<br>";
+        echo 'WSB'.'<hr>';
+
+        $text = <<<LABEL
+            Imię: $name<br>
+        LABEL;
+
+        echo $text;
+
+        // Wersja PHP
+        echo PHP_VERSION;
+    ?>
 </body>
 </html>
